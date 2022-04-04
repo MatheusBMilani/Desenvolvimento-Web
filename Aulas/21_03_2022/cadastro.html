@@ -1,0 +1,161 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        button:hover {
+            opacity: 1;
+        }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+
+            .cancelbtn,
+            .signupbtn {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <section>
+
+        <header>
+            <img src="Logoanhembi.png">
+        </header>
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="cronograma.html">Cronograma</a></li>
+            </ul>
+
+        </nav>
+
+        <form action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Crie sua conta</h1>
+                <p>Insira suas Informações para cadastrar-se.</p>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Insira um email" name="email" required>
+
+                <label for="psw"><b>Senha</b></label>
+                <input type="password" placeholder="Insira uma senha" name="psw" required>
+
+                <label for="psw-repeat"><b>Confirme a sua senha</b></label>
+                <input type="password" placeholder="Confirmar senha" name="psw-repeat" style="margin-bottom:15px"
+                    required>
+                <br>
+                <label for="cpf">CPF</label>
+                <input type="number" name="cpf" id="cpf" style="margin-bottom:15px">
+                <label for="cpf">Nome</label>
+                <input type="text" name="Nome" id="Nome">
+                <br>
+                <label for="nasc">Data de nascimento</label>
+                <input type="date" name="nasc" id="nasc" min="1970-01-01" max="2003-01-01">
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembre-me
+                </label>
+
+                <p>Ao criar uma conta você concorda com nossos <a href="#" style="color:dodgerblue">Termos de
+                        Privacidade</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancelar</button>
+                    <button type="submit" class="signupbtn">Cadastre-se</button>
+                </div>
+            </div>
+        </form>
+
+        <footer>
+            <p>2022, &#169 Copyright por M&M, todos os direitos reservados.</p>
+        </footer>
+
+    </section>
+
+
+
+</body>
+
+
+
+</html>
